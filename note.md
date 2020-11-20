@@ -65,7 +65,7 @@ RTMP的协议规范中音频支持pcma和pcmu, WebRTC也支持pcma和pcmu, 如�
 
 
 Talk is cheap, show me the code.  我实现了一个RTMP推流WebRTC播放的原型实现, 在阿里云上测试延迟在500ms以内. 
-完整的代码在这里 https://github.com/RTCEngine/rtmp-to-webrtc 
+
 
 
 ****  最后
@@ -74,7 +74,33 @@ Talk is cheap, show me the code.  我实现了一个RTMP推流WebRTC播放的原
 我已经加入学而思网校, 负责互动直播产品的研发. 
 目前音视频方向都还有很多坑, 客户端和服务端都比较缺人, 如果对音视频和WebRTC以及在线教育感兴趣欢迎联系我. 
 
-简历请砸向我:  leeoxiang@gmail.com
+
+再原有基础，加上音频。
+在centos7上正常编译，nodejs 8.7    gcc++版本7
+安装gstreamer  
+
+yum install  libgstreamer*
+yum install  gstreamer*
+
+yum install gstreamer1
+yum install gstreamer1-plugins-good
+yum install gstreamer1-plugins-bad-freeworld 
+yum install gstreamer1-libav-debuginfo 
+yum install gstreamer1-plugins-bad-free-devel 
+yum install gstreamer1-plugins-bad-freeworld-debuginfo  
+yum install gstreamer1-plugins-base-tools 
+yum install gstreamer1-plugins-ugly 
+yum install gstreamer1-plugins-ugly-debuginfo
+yum install gstreamer1-plugins-ugly-free-devel  
+yum install gstreamer1-rtsp-server
+yum install gstreamer1-rtsp-server-devel 
+yum install gstreamer1-vaapi
+yum install gstreamer1-vaapi-debuginfo 
+yum install gstreamer1-libav
+
+
+
+简历请砸向我:  jinyongxian@qq.com
 
 
 
