@@ -3,12 +3,6 @@
 基于RTMP-CDN和WebRTC的低延迟(500ms以内)直播系统 
 
 
-### 观看效果 
-
-
-https://rtmp-to-webrtc.dot.cc
-
-demo 部署在个人测试服务器上,  带宽有限,  如果挂了请通知我.
 
 
 ### 如何工作 
@@ -36,7 +30,7 @@ ffmpeg -f lavfi -re -i color=black:s=640x480:r=15 -filter:v "drawtext=text='%{lo
 
 此部分使用了gstreamer,  只所以用gstreamer是因为发现ffmpeg的转出来的rtp包, 有一定概率webrtc会解析失败, 还未找到具体原因
 ```
-gst-launch-1.0 -v  rtmpsrc location=rtmp://localhost/live/{stream} ! flvdemux ! h264parse ! \
+gst-launch -v  rtmpsrc location=rtmp://localhost/live/{stream} ! flvdemux ! h264parse ! \
 rtph264pay config-interval=-1 pt={pt} !  udpsink host=127.0.0.1 port={port}
 
 ```
@@ -47,7 +41,31 @@ rtph264pay config-interval=-1 pt={pt} !  udpsink host=127.0.0.1 port={port}
 服务端部署在阿里云上,  延迟在1000毫秒内,  gstreamer的转封装引入了300ms-500ms延迟(目测, 还没验证).
 优化后整体延迟可以在500ms以内.
 
+在centos7上正常编译，nodejs 8.7    gcc++版本7
+安装gstreamer  
 
+yum install  libgstreamer*
+yum install  gstreamer*
+
+yum install gstreamer1
+yum install gstreamer1-plugins-good
+yum install gstreamer1-plugins-bad-freeworld 
+yum install gstreamer1-libav-debuginfo 
+yum install gstreamer1-plugins-bad-free-devel 
+yum install gstreamer1-plugins-bad-freeworld-debuginfo  
+yum install gstreamer1-plugins-base-tools 
+yum install gstreamer1-plugins-ugly 
+yum install gstreamer1-plugins-ugly-debuginfo
+yum install gstreamer1-plugins-ugly-free-devel  
+yum install gstreamer1-rtsp-server
+yum install gstreamer1-rtsp-server-devel 
+yum install gstreamer1-vaapi
+yum install gstreamer1-vaapi-debuginfo 
+yum install gstreamer1-libav
+
+
+
+简历请砸向我:  jinyongxian@qq.com
 
 
 
