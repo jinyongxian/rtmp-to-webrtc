@@ -1,0 +1,154 @@
+npm install -g node-gyp
+
+
+npm cache clean --force
+rm -rf node_modules
+rm -rf package-lock.json
+sudo npm install
+
+
+ npm i -g node-gyp  
+
+
+har-validator@5.1.5: this library is no longer supported
+
+
+ git submodule update
+   npm i
+   npm run-script dist
+
+
+npm install -g bcrypt
+
+scl enable devtoolset-9 bash
+
+sudo yum install swig
+
+git clone --recursive  https://github.com/notedit/rtmp-to-webrtc.git
+
+scl enable devtoolset-7 bash
+
+Also wanted to add, My node version is 6.17.0 and gcc version is 4.8.5. Machine is linux based cent os 7.
+
+
+sudo apt-get install libxmlrpc-c++8-dev
+sudo apt-get install libgsm1-dev
+sudo apt-get install libspeex-dev
+sudo apt-get install libopus-dev
+sudo apt-get install libavresample-dev
+sudo apt-get install libx264-dev
+sudo apt-get install libvpx-dev
+sudo apt-get install libswscale-dev
+sudo apt-get install libavformat-dev
+sudo apt-get install libmp4v2-dev
+sudo apt-get install libgcrypt11-dev
+sudo apt-get install libssl1.0-dev
+
+
+
+
+sudo yum install libxmlrpc-c++8-dev
+sudo yum install libmp4v2-dev
+sudo yum install libssl*
+ sudo yum install libgcrypt*
+
+sudo yum install libgsm1-dev
+sudo yum install libspeex-dev
+sudo yum install libopus-dev
+sudo yum install libavresample-dev
+sudo yum install libx264-dev
+sudo yum install libvpx-dev
+sudo yum install libswscale-dev
+sudo yum install libavformat-dev
+sudo yum install libmp4v2-dev
+
+
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+source   ~/.bashrc
+nvm ls-remote
+nvm install  v8.12.0
+nvm list
+nvm use v8.12.0
+nvm alias default v9.5.0
+
+nvm use v8.17.0
+nvm install v8.17.0
+
+
+
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gst-libav
+
+
+yum clean all && yum update  
+yum install gstreamer1 gstreamer1-plugins-good gstreamer1-plugins-bad
+yum install  gstreamer1-plugins-bad
+
+yum install gstreamer1-python
+yum install gstreamer1-vaapi
+yum install gstreamer1-rtsp-server
+yum install gstreamer1-libav
+
+
+yum install  libgstreamer*
+yum install  gstreamer*
+source ~/.bashrc
+
+
+gst-plugins-bad
+
+
+gstreamer-plugins-bad-0.10.23-12.fc30.i686.html
+
+
+ gstreamer1-devel-docs                        
+ gstreamer1-libav-debuginfo                   
+ gstreamer1-plugins-bad-free-devel            
+ gstreamer1-plugins-bad-freeworld             
+ gstreamer1-plugins-bad-freeworld-debuginfo   
+ gstreamer1-plugins-base-devel-docs           
+ gstreamer1-plugins-base-tools                
+ gstreamer1-plugins-ugly                      
+ gstreamer1-plugins-ugly-debuginfo            
+ gstreamer1-plugins-ugly-devel-docs           
+ gstreamer1-plugins-ugly-free-devel           
+ gstreamer1-rtsp-server                       
+ gstreamer1-rtsp-server-devel                 
+ gstreamer1-rtsp-server-devel-docs            
+ gstreamer1-vaapi                             
+ gstreamer1-vaapi-debuginfo                   
+ gstreamer1-vaapi-devel-docs 
+ 
+ 
+yum install gstreamer1
+yum install gstreamer1-plugins-good
+yum install gstreamer1-plugins-bad-freeworld 
+yum install gstreamer1-libav-debuginfo 
+yum install gstreamer1-plugins-bad-free-devel 
+yum install gstreamer1-plugins-bad-freeworld-debuginfo  
+yum install gstreamer1-plugins-base-tools 
+yum install gstreamer1-plugins-ugly 
+yum install gstreamer1-plugins-ugly-debuginfo
+yum install gstreamer1-plugins-ugly-free-devel  
+yum install gstreamer1-rtsp-server
+yum install gstreamer1-rtsp-server-devel 
+yum install gstreamer1-vaapi
+yum install gstreamer1-vaapi-debuginfo 
+yum install gstreamer1-libav
+																				  
+                                                                                 
+                                                                                 
+ffmpeg -analyzeduration 300M -probesize 300M -protocol_whitelist file,udp,rtp -i janus.sdp -c:v copy -c:a aac -preset ultrafast -tune zerolatency -f flv <RTMP URL>/<stream name>                                    
+                                                                                 
+                                                                                 
+                                                                                 
+                                                                                 
+                                                                                 
+                                                                                 
+                                                                                 
+                                                                                 
+                                                                                 
+                                                                                 
+                                                                                 

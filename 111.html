@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<pre class="hljs cpp"><code>gst-launch<span class="hljs-number">-1.0</span> -v  rtmpsrc location=rtmp:<span class="hljs-comment">//172.17.230.220/live/123 ! flvdemux ! h264parse ! rtph264pay config-interval=-1 pt=111 ! udpsink host=121.199.37.143 port=15004</span>
+
+gst-launch<span class="hljs-number">-1.0</span> -v rtmpsrc location=rtmp:<span class="hljs-comment">//172.17.230.220/live/123 \</span>
+    ! flvdemux name=demux demux.audio ! <span class="hljs-built_in">queue</span> ! decodebin ! audioconvert ! audioresample  \
+    ! opusenc ! rtpopuspay timestamp-offset=<span class="hljs-number">0</span>  ! udpsink  host=<span class="hljs-number">121.199</span><span class="hljs-number">.37</span><span class="hljs-number">.143</span>  port=<span class="hljs-number">15002</span> \
+    demux.video! <span class="hljs-built_in">queue</span> ! h264parse ! rtph264pay timestamp-offset=<span class="hljs-number">0</span> config-interval=<span class="hljs-number">-1</span>  \
+    ! udpsink  host=<span class="hljs-number">121.199</span><span class="hljs-number">.37</span><span class="hljs-number">.143</span> port=<span class="hljs-number">15004</span></code></pre>
+	</body>
+</html>
